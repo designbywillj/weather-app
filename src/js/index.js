@@ -9,7 +9,7 @@ $(document).ready(function() {
     // Getting JSON
     function setData() {
         $.getJSON(
-            `http://api.openweathermap.org/data/2.5/weather?q=${ city }&units=imperial&APPID=4883c8df8e23bd828be9c72f7c7dbbc2`,
+            `https://api.openweathermap.org/data/2.5/weather?q=${ city }&units=imperial&APPID=4883c8df8e23bd828be9c72f7c7dbbc2`,
             function(data) {
                 console.log(data)
         
