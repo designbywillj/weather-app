@@ -1,0 +1,33 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color--white;
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: opacity 0.25s cubic-bezier(0, 0, 0, 1), top 0.25s cubic-bezier(0, 0, 0, 1);
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        height: 100%;
+        padding: 1.5rem 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &.toggled {
+        top: 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

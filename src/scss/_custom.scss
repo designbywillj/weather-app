@@ -1,0 +1,107 @@
+.desktop {
+    @media (max-width: 719px) {
+        display: none;
+    }
+}
+
+.mobile {
+    @media (min-width: 720px) {
+        display: none;
+    }
+}
+
+.city {
+    font-weight: 600;
+
+    @media (min-width: 720px) {
+        font-size: 2rem;
+    }
+
+    &.desktop {
+        margin-top: 4rem;
+    }
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 720px) {
+        flex-direction: row;
+    }
+
+    &__icon {
+        width: 8rem;
+        height: 8rem;
+        margin: 1.5rem 0;
+    }
+
+    &__text {
+        padding-left: 0.75rem;
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: -0.0222em;
+    }
+}
+
+.weather {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+
+    @media (min-width: 720px) {
+        text-align: left;
+    }
+}
+
+.high-low {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 720px) {
+        justify-content: left;
+    }
+
+    &__high {
+        font-weight: 600;
+    }
+
+    &__low {
+        margin-left: 1.5rem;
+        color: $color--gray;
+    }
+}
+
+.stats {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 720px) {
+        margin-top: 6rem;
+    }
+
+    &__item {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color--light-gray;
+
+        @media (min-width: 720px) {
+            width: 320px;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        div {
+            color: $color--gray;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <button class="header__button">
+                <img src="src/svg/logo.svg" alt="logo" title="Home">
+            </button>
+            <div class="city mobile"></div>
+            <button class="header__button search">
+                <img src="src/svg/search.svg" alt="Search" title="Search">
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <section>
+                <div class="city desktop"></div>
+                <div class="temp">
+                    <img src="#" alt="" class="temp__icon">
+                    <p class="temp__text"></p>
+                </div>
+                <div class="weather"></div>
+                <div class="high-low">
+                    <div class="high-low__high"></div>
+                    <div class="high-low__low"></div>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stats__item">
+                    <h3>Humidity</h3>
+                    <div class="humidity"></div>
+                </div>
+                <div class="stats__item">
+                    <h3>Wind</h3>
+                    <div class="wind"></div>
+                </div>
+                <div class="stats__item">
+                    <h3>Pressure</h3>
+                    <div class="pressure"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <div class="modal">
+        <div class="modal__container">
+            <div class="header">
+                <div class="header__content">
+                    <button class="header__button close">
+                        <img src="/src/svg/close.svg" alt="Close" title="Close">
+                    </button>
+                </div>
+            </div>
+            <form class="modal__content">
+                <input type="text" placeholder="Search cities" class="search__input">
+                <button class="button submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

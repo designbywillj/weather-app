@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple weather app using API calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/scss -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designbywillj/weather-app.git"
+  },
+  "author": "Will Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designbywillj/weather-app/issues"
+  },
+  "homepage": "https://github.com/designbywillj/weather-app#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
