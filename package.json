@@ -19,6 +19,6 @@
   "homepage": "https://github.com/designbywillj/weather-app#readme",
   "devDependencies": {},
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
